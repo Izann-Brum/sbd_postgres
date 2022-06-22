@@ -83,7 +83,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../pages/cadUsuario.php">Cadastrar Usuario </a>
+         <a class="dropdown-item" href="../../pages/CadUsuario.php">Cadastrar Usuario </a>
         <a class="dropdown-item" href="../../pages/usuariosCadastrados.php">Usuarios Cadastrados </a>
         </div>
       </li>
