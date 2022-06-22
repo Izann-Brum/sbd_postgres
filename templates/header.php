@@ -21,8 +21,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../Projeto/pages/CadAutor.php">Cadastrar Autor </a>
-         <a class="dropdown-item" href="../../Projeto/pages/Autores.php">Autores e Livros </a>
+         <a class="dropdown-item" href="../../pages/CadAutor.php">Cadastrar Autor </a>
+         <a class="dropdown-item" href="../../pages/Autores.php">Autores e Livros </a>
         </div>
       </li>
     </ul> <!-- FIM -->
