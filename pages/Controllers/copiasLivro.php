@@ -28,12 +28,13 @@ if ($_POST['submit']=='Cadastrar'){
 		$Quantidade = $_POST['Qt_copias'];
 
 		
-		// try {
-		// 	$LivroModel->insertInLivroCopias($Cod_livro_copias, $Cod_unidade_copias, $Quantidade);
-		// 	header("Location: ../../pages/copiasLivro.php?MSG=Cadastrado com Sucesso");	
-		// } catch (\PDOException $e) {
-		// 	header("Location: ../../pages/copiasLivro.php?MSG=Erro ao Cadastrar Cópias");	
-		// }
+		try {
+			$LivroModel->insertInLivroCopias($Cod_livro_copias, $Cod_unidade_copias, $Quantidade);
+			header("Location: ../../pages/copiasLivro.php?MSG=Cópias cadastradas com sucesso");	
+		} catch (\PDOException $e) {
+			echo $e->getMessage();
+			// header("Location: ../../pages/copiasLivro.php?MSG=Erro ao Cadastrar Cópias");	
+		}
         
 	}
 } elseif($_POST['submit']=='Alterar'){
