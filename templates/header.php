@@ -9,7 +9,7 @@
 
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #073661;">
-  <a class="navbar-brand" href="../../Projeto/index.php" style ="font-weight:bold !important; font-size: 32px; font-family: 'Dark', sans-serif"> <img src="../../Projeto/livro.png" width="32px" height="32px" alt="">&nbsp; S.B.D.</a>
+  <a class="navbar-brand" href="../../index.php" style ="font-weight:bold !important; font-size: 32px; font-family: 'Dark', sans-serif"> <img src="../../livro.png" width="32px" height="32px" alt="">&nbsp; S.B.D.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,8 +34,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../Projeto/pages/CadEditora.php">Cadastrar Editora </a>
-         <a class="dropdown-item" href="../../Projeto/pages/editorasCadastradas.php">Editoras Cadastradas </a>
+         <a class="dropdown-item" href="../../pages/CadEditora.php">Cadastrar Editora </a>
+         <a class="dropdown-item" href="../../pages/editorasCadastradas.php">Editoras Cadastradas </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
@@ -46,8 +46,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../Projeto/pages/novoEmprestimo.php">Novo Empréstimo </a>
-        <a class="dropdown-item" href="../../Projeto/pages/emprestimosPendentes.php">Empréstimos Pendentes </a>
+        <a class="dropdown-item" href="../../pages/novoEmprestimo.php">Novo Empréstimo </a>
+        <a class="dropdown-item" href="../../pages/emprestimosPendentes.php">Empréstimos Pendentes </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
@@ -58,9 +58,9 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../Projeto/pages/CadLivro.php">Cadastrar Livro </a>
-        <a class="dropdown-item" href="../../Projeto/pages/livrosCadastrados.php">Livros Cadastrados </a>
-        <a class="dropdown-item" href="../../Projeto/pages/copiasLivro.php">Registrar Cópias </a>
+        <a class="dropdown-item" href="../../pages/CadLivro.php">Cadastrar Livro </a>
+        <a class="dropdown-item" href="../../pages/livrosCadastrados.php">Livros Cadastrados </a>
+        <a class="dropdown-item" href="../../pages/copiasLivro.php">Registrar Cópias </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
@@ -71,8 +71,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../Projeto/pages/CadUnidade.php">Cadastrar Unidade </a>
-        <a class="dropdown-item" href="../../Projeto/pages/unidadesCadastradas.php">Unidades Cadastradas</a>
+        <a class="dropdown-item" href="../../pages/CadUnidade.php">Cadastrar Unidade </a>
+        <a class="dropdown-item" href="../../pages/unidadesCadastradas.php">Unidades Cadastradas</a>
         </div>
       </li>
     </ul>  <!-- FIM -->
@@ -83,8 +83,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../Projeto/pages/cadUsuario.php">Cadastrar Usuario </a>
-        <a class="dropdown-item" href="../../Projeto/pages/usuariosCadastrados.php">Usuarios Cadastrados </a>
+         <a class="dropdown-item" href="../../pages/cadUsuario.php">Cadastrar Usuario </a>
+        <a class="dropdown-item" href="../../pages/usuariosCadastrados.php">Usuarios Cadastrados </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
@@ -95,8 +95,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../Projeto/page_about_proj\Página-Inicial.php">Sobre o Projeto </a>
-         <a class="dropdown-item" href="../../Projeto/page_JP/Página-Inicial.php">Sobre os Desenvolvedores </a>
+         <a class="dropdown-item" href="../../page_about_proj\Página-Inicial.php">Sobre o Projeto </a>
+         <a class="dropdown-item" href="../../page_JP/Página-Inicial.php">Sobre os Desenvolvedores </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
