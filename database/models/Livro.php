@@ -55,7 +55,7 @@ class LivroModel
         FROM sbd.\"LIVRO_COPIAS\" AS lc 
         INNER JOIN sbd.\"LIVRO\" AS l ON l.\"Cod_livro\"=lc.\"Cod_livro\" 
         INNER JOIN sbd.\"LIVRO_AUTOR\" ON \"Nome\"=\"Nome_autor\"  
-        INNER JOIN sbd.\"UNIDADE_BIBLIOTECA\" AS ub ON lc.\"Cod_unidade\"=ub.\"Cod_unidade\";");
+        INNER JOIN sbd.\"UNIDADE_BIBLIOTECA\" AS ub ON lc.\"Cod_unidade\"=ub.\"Cod_unidade\" ORDER BY \"Nome_unidade\" ASC;");
         
         $stocks = [];
         while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
