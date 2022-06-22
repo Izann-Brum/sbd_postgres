@@ -33,7 +33,7 @@ include('../templates/header.php');
       </div></header>
     <section class="u-align-left u-clearfix u-section-1" id="carousel_fc41">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h4 class="u-align-left u-text u-text-default u-text-1">WHOW I AM?</h4>
+        <h4 class="u-align-left u-text u-text-default u-text-1">WHO I AM?</h4>
         <h4 class="u-align-left u-text u-text-2">...</h4>
         <h4 class="u-align-left u-text u-text-default u-text-3">NOBODY...</h4>
         <div class="u-image u-image-circle u-image-1" data-image-width="539" data-image-height="959"></div>
