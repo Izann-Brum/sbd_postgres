@@ -1,7 +1,3 @@
-<?php
-include('../../templates/header.php');
-?>
-
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -51,6 +47,9 @@ include('../../templates/header.php');
                   <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a>
                   <input type="submit" value="submit" class="u-form-control-hidden">
                 </div>
+                <div class="u-form-send-message u-form-send-success"> Obrigado! A sua mensagem foi enviada. </div>
+                <div class="u-form-send-error u-form-send-message"> Não foi possível enviar a sua mensagem. Por favor, corrija os erros e tente novamente. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
               </form>
             </div>
           </div>
@@ -58,8 +57,18 @@ include('../../templates/header.php');
       </div>
     </section>
     
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
   </body>
 </html>
-<?php
-include('../../templates/footer.php');
-?>
