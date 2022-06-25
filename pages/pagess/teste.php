@@ -32,7 +32,7 @@ include('../../templates/header.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-custom-color-4 u-group u-opacity u-opacity-95 u-radius-9 u-shape-round u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-text u-text-body-alt-color u-text-1">CADASTRO EDITORA</h2>
+            <h2 class="u-text u-text-body-alt-color u-text-1">CADASTRO2EDITORA</h2>
             <div class="u-form u-form-1">
               <form action="#" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
                 <div class="u-form-group u-form-name">
