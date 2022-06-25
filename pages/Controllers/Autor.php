@@ -20,6 +20,9 @@ $Cod_livro = null;
 $Nome_autor = null;
 $Nome = null;
 
+echo ' post\'submit\'';
+echo $_POST['submit'];
+
 
 if ($_POST['submit']=='Cadastrar'){
 	echo ' submit: ';
