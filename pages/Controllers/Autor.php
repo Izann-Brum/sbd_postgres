@@ -21,6 +21,7 @@ $Nome = null;
 
 
 if ($_POST['submit']=='Cadastrar'){
+	echo ' submit: ';
 	if (empty($_POST['Nome'])){
 		header("Location: ../../pages/CadAutor.php?MSGERROR=Campo nome em branco");
 		die();
