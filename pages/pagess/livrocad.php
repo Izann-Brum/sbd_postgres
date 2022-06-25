@@ -57,7 +57,7 @@ include('../../templates/header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO LIVRO</h2>
             <div class="u-form u-form-1">
-              <form action="../Controllers/Unidade.php" method="POST" source="custom" name="form" style="padding: 10px;">
+              <form action="../Controllers/Livro.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
                 <!-- CAMPO TITULO -->
                 <div class="u-form-group u-form-name">
