@@ -1,4 +1,28 @@
 <?php
+include '../../database/models.php';
+include_once '../../database/database.ini.php';
+
+use ConexaoPHPPostgres\LivroModel as LivroModel;
+use ConexaoPHPPostgres\EditoraModel as EditoraModel;
+use ConexaoPHPPostgres\AutorModel as AutorModel;
+
+try {
+    $LivroModel = new LivroModel($pdo);
+    $Livros = $LivroModel->all();
+	
+	$EditoraModel = new EditoraModel($pdo);
+    $Editoras = $EditoraModel->all();
+
+    $AutorModel = new AutorModel($pdo);
+    $Autores = $AutorModel->all();
+} catch (\PDOException $e) {
+    echo $e->getMessage();
+}
+
+?>
+
+
+<?php
 include('../../templates/header.php');
 ?>
 <!DOCTYPE html>
