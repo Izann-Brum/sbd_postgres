@@ -68,7 +68,9 @@ include('../../templates/header.php');
                 <!-- CAMPO ENDEREÇO -->
                 <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="text" placeholder="Endereço" id="email-9b6e" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
+                    <?php foreach ($Autores as $Autor) : ?>
+                    <option value="<?php echo ($Autor['Nome'])?>"><?php echo htmlspecialchars($Autor['Nome'])?></option>
+                    <?php endforeach; ?>
                 </div>
 
                 <!-- BOTÃO CADASTRAR -->
