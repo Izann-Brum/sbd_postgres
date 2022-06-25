@@ -3,6 +3,7 @@
 echo ' 1 ';
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
+echo ' 2 ';
 
 use ConexaoPHPPostgres\LivroModel as LivroModel;
 use ConexaoPHPPostgres\AutorModel as AutorModel;
@@ -14,7 +15,7 @@ try {
 	echo $e->getMessage();
 }
 
-
+echo ' 3 ';
 $Cod_livro = null;
 $Nome_autor = null;
 $Nome = null;
