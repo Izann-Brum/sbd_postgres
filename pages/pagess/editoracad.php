@@ -38,9 +38,18 @@ include('../../templates/header.php');
           <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
               <input type="text" placeholder="Nome" id="name-ef64" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
+            </div>
+
+            <div class="u-form-group u-form-name u-label-none">
+              <!-- <label for="name-ef64" class="u-label">seila</label> -->
               <input type="text" placeholder="Endereco" id="name-ef64" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
+            </div>
+
+            <div class="u-form-group u-form-name u-label-none">
+              <!-- <label for="name-ef64" class="u-label">seila</label> -->
               <input type="text" placeholder="Telefone" id="name-ef64" name="Tefelone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="11">
             </div>
+
             <div class="u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-submit u-button-style">Cadastrar</a>
               <input type="submit" value="Cadastrar" name="submit" class="u-form-control-hidden">
@@ -58,3 +67,4 @@ include('../../templates/header.php');
 <?php
 include('../../templates/footer.php');
 ?>
+
