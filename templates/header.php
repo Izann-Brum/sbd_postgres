@@ -48,7 +48,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../pages/novoEmprestimo.php">Novo Empréstimo </a>
+        <a class="dropdown-item" href="../../pages/pagess/novoEmprestimo.php">Novo Empréstimo </a>
         <a class="dropdown-item" href="../../pages/emprestimosPendentes.php">Empréstimos Pendentes </a>
         </div>
       </li>
