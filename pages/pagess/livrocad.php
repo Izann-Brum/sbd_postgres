@@ -62,7 +62,7 @@ include('../../templates/header.php');
                 <!-- CAMPO TITULO -->
                 <div class="u-form-group u-form-name">
                   <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="text" placeholder="Nome" id="name-9b6e" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
+                  <input type="text" placeholder="Titulo" id="name-9b6e" name="Titulo" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
                 </div>
 
                 <!-- CAMPO AUTOR -->
@@ -75,7 +75,7 @@ include('../../templates/header.php');
                     </select></center></td>
                 </div>
 
-                <!-- CAMPO AUTOR -->
+                <!-- CAMPO EDITORA -->
                  <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
                     <td><center><select class="input-group-text" name="Nome_editora">
