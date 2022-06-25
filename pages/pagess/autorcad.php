@@ -36,7 +36,7 @@ include('../../templates/header.php');
           <form action="../Controllers/Autor.php" method="POST" style="padding: 18px;" source="email">
             <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
-              <input type="text" placeholder="Nome" id="name-ef64" name="Nome_autor" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
+              <input type="text" placeholder="Nome" id="name-ef64" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
             </div>
             <div class="u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-submit u-button-style">Cadastrar</a>
