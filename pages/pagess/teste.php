@@ -33,7 +33,7 @@ include('../../templates/header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO EDITORA</h2>
             <div class="u-form u-form-1">
-              <form action="../Controllers/Editora.php" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+              <form action="../Controllers/Editora.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
                 <!-- CAMPO NOME -->
                 <div class="u-form-group u-form-name">
@@ -43,19 +43,19 @@ include('../../templates/header.php');
 
                 <!-- CAMPO ENDEREÇO -->
                 <div class="u-form-group">
-                  <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
+                  <!-- <label for="email-9b6e" class="u-form-control-hidden u-label"></label> -->
                   <input type="text" placeholder="Endereço" id="email-9b6e" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
                 </div>
 
                 <!-- CAMPO TELEFONE -->
                 <div class="u-form-group u-form-phone u-form-group-3">
-                  <label for="text-9737" class="u-form-control-hidden u-label"></label>
+                  <!-- <label for="text-9737" class="u-form-control-hidden u-label"></label> -->
                   <input type="text" placeholder="Telefone" id="text-9737" name="Telefone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"  maxlength="14" required="required">
                 </div>
 
                 <!-- BOTÃO CADASTRAR -->
                 <div class="u-align-center u-form-group u-form-submit">
-                  <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a>
+                  <!-- <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a> -->
                   <input type="submit" value="Cadastrar" name="submit" class="u-form-control-hidden">
                 </div>
 
