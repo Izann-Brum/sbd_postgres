@@ -35,7 +35,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../pages/pagess/teste.php">Cadastrar Editora Tela2 </a>
+         <a class="dropdown-item" href="../../pages/pagess/editoracad.php">Cadastrar Editora Tela2 </a>
          <a class="dropdown-item" href="../../pages/CadEditora.php">Cadastrar Editora </a>
          <a class="dropdown-item" href="../../pages/editorasCadastradas.php">Editoras Cadastradas </a>
         </div>
@@ -73,7 +73,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../pages/CadUnidade.php">Cadastrar Unidade </a>
+        <a class="dropdown-item" href="../../pages/pagess/unidadecad.php">Cadastrar Unidade </a>
         <a class="dropdown-item" href="../../pages/unidadesCadastradas.php">Unidades Cadastradas</a>
         </div>
       </li>
