@@ -33,7 +33,7 @@ include('../../templates/header.php');
         <div class="u-custom-color-3 u-opacity u-opacity-90 u-radius-9 u-shape u-shape-round u-shape-1"></div>
         <h2 class="u-text u-text-body-alt-color u-text-1">CADASTRO EDITORA</h2>
         <div class="u-form u-form-1">
-          <form action="../Controllers/Editora.php" method="POST" style="padding: 18px;">
+          <form action="../Controllers/Editora.php" method="POST" style="padding: 5px;">
            
           <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
