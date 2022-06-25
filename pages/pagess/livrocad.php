@@ -78,7 +78,7 @@ include('../../templates/header.php');
                 <!-- CAMPO EDITORA -->
                  <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
-                    <td><center><select class="input-group-text" name="Nome_editora">
+                    <td><center><select class="input-group-text" name="Nome_editora" style="position: relative;">
                     <?php foreach ($Editoras as $Editora) : ?>
                     <option value="<?php echo ($Editora['Nome'])?>"><?php echo htmlspecialchars($Editora['Nome'])?></option>
                     <?php endforeach; ?>
