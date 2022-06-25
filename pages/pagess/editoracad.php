@@ -37,17 +37,17 @@ include('../../templates/header.php');
            
           <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
-              <input type="text" placeholder="Nome" id="" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
+              <input  style="padding: 5px; type="text" placeholder="Nome" id="" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
             </div>
 
             <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
-              <input type="text" placeholder="Endereco" id="" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
+              <input  style="padding: 5px; type="text" placeholder="Endereco" id="" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-2" required="" autofocus="autofocus" maxlength="64">
             </div>
 
             <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
-              <input type="text" placeholder="Telefone" id="" name="Tefelone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="11">
+              <input  style="padding: 5px; type="text" placeholder="Telefone" id="" name="Tefelone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-3" required="" autofocus="autofocus" maxlength="11">
             </div>
 
             <div class="u-form-group u-form-submit">
