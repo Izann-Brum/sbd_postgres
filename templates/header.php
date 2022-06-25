@@ -21,8 +21,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../pages/pagess/autorcad.php">Cadastrar Autor Tela2 </a>
-         <a class="dropdown-item" href="../../pages/CadAutor.php">Cadastrar Autor </a>
+         <a class="dropdown-item" href="../../pages/pagess/autorcad.php">Cadastrar Autor </a>
+         <!-- <a class="dropdown-item" href="../../pages/CadAutor.php">Cadastrar Autor </a> -->
          <a class="dropdown-item" href="../../pages/Autores.php">Autores e Livros </a>
         </div>
       </li>
@@ -35,8 +35,8 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-         <a class="dropdown-item" href="../../pages/pagess/editoracad.php">Cadastrar Editora Tela2 </a>
-         <a class="dropdown-item" href="../../pages/CadEditora.php">Cadastrar Editora </a>
+         <a class="dropdown-item" href="../../pages/pagess/editoracad.php">Cadastrar Editora </a>
+         <!-- <a class="dropdown-item" href="../../pages/CadEditora.php">Cadastrar Editora </a> -->
          <a class="dropdown-item" href="../../pages/editorasCadastradas.php">Editoras Cadastradas </a>
         </div>
       </li>
