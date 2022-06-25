@@ -21,6 +21,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="../../pages/pagess/cadautor.php">Cadastrar Autor Tela2 </a>
          <a class="dropdown-item" href="../../pages/CadAutor.php">Cadastrar Autor </a>
          <a class="dropdown-item" href="../../pages/Autores.php">Autores e Livros </a>
         </div>
