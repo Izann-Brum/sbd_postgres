@@ -61,7 +61,7 @@ include('../../templates/header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">NOVO EMPRÉSTIMO</h2>
             <div class="u-form u-form-1">
-              <form action="../Controllers/Livro.php" method="POST" source="custom" name="form" style="padding: 10px;">
+              <form action="../Controllers/Emprestimo.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
                 <!-- CAMPO NOME -->
                 <div class="u-form-group">
