@@ -59,19 +59,30 @@ include('../../templates/header.php');
             <div class="u-form u-form-1">
               <form action="../Controllers/Unidade.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
-                <!-- CAMPO NOME -->
+                <!-- CAMPO TITULO -->
                 <div class="u-form-group u-form-name">
                   <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
                   <input type="text" placeholder="Nome" id="name-9b6e" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
                 </div>
 
-                <!-- CAMPO ENDEREÇO -->
+                <!-- CAMPO AUTOR -->
                 <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
                     <td><center><select class="input-group-text" name="Nome_autor">
                     <?php foreach ($Autores as $Autor) : ?>
                     <option value="<?php echo ($Autor['Nome'])?>"><?php echo htmlspecialchars($Autor['Nome'])?></option>
                     <?php endforeach; ?>
+                    </select></center></td>
+                </div>
+
+                <!-- CAMPO AUTOR -->
+                 <div class="u-form-group">
+                  <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
+                    <td><center><select class="input-group-text" name="Nome_editora">
+                    <?php foreach ($Editoras as $Editora) : ?>
+                    <option value="<?php echo ($Editora['Nome'])?>"><?php echo htmlspecialchars($Editora['Nome'])?></option>
+                    <?php endforeach; ?>
+                    </select></center></td>
                 </div>
 
                 <!-- BOTÃO CADASTRAR -->
