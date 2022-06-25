@@ -96,7 +96,7 @@ include('../../templates/header.php');
                  <!-- CAMPO QUANTIDADE -->
                 <div class="u-form-group u-form-name">
                   <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
-                  <center><input type="number" placeholder="Quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64"> </center>
+                  <input type="number" placeholder="Quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64" style="text-align: center;">
                 </div>
         
                 <!-- BOTÃO INSERIR -->
