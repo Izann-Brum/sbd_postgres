@@ -68,7 +68,7 @@ include('../../templates/header.php');
                 <!-- CAMPO ENDEREÇO -->
                 <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
-                    <td><center><select class="input-group-text" name="Nome_autor">
+                    <td><center><select  name="Nome_autor">
                     <?php foreach ($Autores as $Autor) : ?>
                     <option value="<?php echo ($Autor['Nome'])?>"><?php echo htmlspecialchars($Autor['Nome'])?></option>
                     <?php endforeach; ?>
