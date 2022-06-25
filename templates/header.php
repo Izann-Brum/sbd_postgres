@@ -60,7 +60,7 @@
         </a>
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <a class="dropdown-item" href="../../pages/CadLivro.php">Cadastrar Livro </a>
+        <a class="dropdown-item" href="../../pages/pagess/livrocad.php">Cadastrar Livro </a>
         <a class="dropdown-item" href="../../pages/livrosCadastrados.php">Livros Cadastrados </a>
         <a class="dropdown-item" href="../../pages/copiasLivro.php">Registrar Cópias </a>
         </div>
