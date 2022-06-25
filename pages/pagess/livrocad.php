@@ -113,7 +113,7 @@ include('../../templates/header.php');
       fill: #1A33FF;
     }
   </style>
-  
+
   </head>
   <body class="u-body u-overlap u-overlap-contrast u-xl-mode">
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="sec-4cf6" data-image-width="6000" data-image-height="4000">
@@ -149,14 +149,14 @@ include('../../templates/header.php');
                     <?php endforeach; ?>
                     </select></center></td>
                 </div>
-                <select name="Fruit">
+                <!-- <select name="Fruit">
                 <option value="" disabled selected>Choose option</option>
                 <option value="Apple">Apple</option>
                 <option value="Banana">Banana</option>
                 <option value="Coconut">Coconut</option>
                 <option value="Blueberry">Blueberry</option>
                 <option value="Strawberry">Strawberry</option>
-                </select>
+                </select> -->
 
                 <!-- BOTÃO CADASTRAR -->
                 <div class="u-align-center u-form-group u-form-submit">
