@@ -50,7 +50,7 @@ include('../../templates/header.php');
                   <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a>
                   <input type="submit" value="submit" class="u-form-control-hidden">
                 </div>
-                <div class="u-form-send-message u-form-send-success"> Obrigado! A sua mensagem foi enviada. </div>
+                <div class="u-form-send-message u-form-send-success"> A sua mensagem foi enviada. </div>
                 <div class="u-form-send-error u-form-send-message"> Não foi possível enviar a sua mensagem. Por favor, corrija os erros e tente novamente. </div>
                 <input type="hidden" value="" name="recaptchaResponse">
               </form>
