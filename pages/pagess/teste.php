@@ -55,7 +55,7 @@ include('../../templates/header.php');
 
                 <!-- BOTÃO CADASTRAR -->
                 <div class="u-align-center u-form-group u-form-submit">
-                  <!-- <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a> -->
+                  <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a>
                   <input type="submit" value="Cadastrar" name="submit" class="u-form-control-hidden">
                 </div>
 
