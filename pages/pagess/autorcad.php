@@ -33,8 +33,9 @@ include('../../templates/header.php');
         <div class="u-custom-color-3 u-opacity u-opacity-90 u-radius-9 u-shape u-shape-round u-shape-1"></div>
         <h2 class="u-text u-text-body-alt-color u-text-1">CADASTRO AUTOR</h2>
         <div class="u-form u-form-1">
-          <form action="../Controllers/Autor.php" method="POST" style="padding: 18px;" source="email">
-            <div class="u-form-group u-form-name u-label-none">
+          <form action="../Controllers/Autor.php" method="POST" style="padding: 18px;">
+           
+          <div class="u-form-group u-form-name u-label-none">
               <!-- <label for="name-ef64" class="u-label">seila</label> -->
               <input type="text" placeholder="Nome" id="name-ef64" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="" autofocus="autofocus" maxlength="64">
             </div>
