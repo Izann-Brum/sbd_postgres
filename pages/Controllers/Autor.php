@@ -26,6 +26,7 @@ if ($_POST['submit']=='Cadastrar'){
 		die();
 	} else {
 		$Nome_autor = $_POST['Nome'];
+		echo 'Nome do autor:  ';
 		echo $Nome_autor;	
 
 		try {
