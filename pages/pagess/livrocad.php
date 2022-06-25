@@ -49,6 +49,71 @@ include('../../templates/header.php');
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="teste">
     <meta property="og:type" content="website">
+    <style>
+    .container {
+      max-width: 350px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    input[type="submit"] {
+      margin-bottom: 20px;
+    }
+    .select-block {
+      width: 300px;
+      margin: 110px auto 30px;
+      position: relative;
+    }
+    select {
+      width: 100%;
+      height: 50px;
+      font-size: 100%;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0;
+      background-color: #1A33FF;
+      border: none;
+      border: 2px solid #1A33FF;
+      border-radius: 4px;
+      color: white;
+      appearance: none;
+      padding: 8px 38px 10px 18px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+    }
+    /* For IE <= 11 */
+    select::-ms-expand {
+      display: none;
+    }
+    .selectIcon {
+      top: 7px;
+      right: 15px;
+      width: 30px;
+      height: 36px;
+      padding-left: 5px;
+      pointer-events: none;
+      position: absolute;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .selectIcon svg.icon {
+      transition: fill 0.3s ease;
+      fill: white;
+    }
+    select:hover,
+    select:focus {
+      color: #000000;
+      background-color: white;
+    }
+    select:hover~.selectIcon,
+    select:focus~.selectIcon {
+      background-color: white;
+    }
+    select:hover~.selectIcon svg.icon,
+    select:focus~.selectIcon svg.icon {
+      fill: #1A33FF;
+    }
+  </style>
+  
   </head>
   <body class="u-body u-overlap u-overlap-contrast u-xl-mode">
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="sec-4cf6" data-image-width="6000" data-image-height="4000">
