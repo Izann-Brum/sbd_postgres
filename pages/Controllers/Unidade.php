@@ -15,7 +15,7 @@ $Nome_unidade = null;
 $Endereco = null;
 
 if ($_POST['submit']=='Cadastrar'){
-	if (empty($_POST['Nome_unidade'])){
+	if (empty($_POST['Nome'])){
 		header("Location: ../../pages/CadUnidade.php?MSGERROR=Nome em branco");
 		die();
 	}
@@ -23,7 +23,7 @@ if ($_POST['submit']=='Cadastrar'){
 		header("Location: ../../pages/CadUnidade.php?MSGERROR=Cidade em branco");
 		die();
 	}else {
-		$Nome_unidade = $_POST['Nome_unidade'];
+		$Nome_unidade = $_POST['Nome'];
         $Endereco = $_POST['Endereco'];
 		try {
 			$UnidadeModel->insert($Nome_unidade, $Endereco);
