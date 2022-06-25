@@ -75,7 +75,7 @@ include('../../templates/header.php');
 
                 <!-- CAMPO LIVROS -->
                  <div class="u-form-group">
-                  <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
+                  <label for="email-9b6e" class="u-form-control-hidden u-label"> Usuário</label>
                     <td><center><select class="input-group-text" required name="Cod_livro">
                     <?php foreach ($Books as $Book) : ?>
                     <option value="<?php echo ($Book['Cod_livro'])?>"><?php echo htmlspecialchars($Book['Titulo'])?></option>
