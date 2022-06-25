@@ -26,6 +26,7 @@ if ($_POST['submit']=='Cadastrar'){
 		die();
 	} else {
 		$Nome_autor = $_POST['Nome'];
+		echo $Nome_autor;	
 
 		try {
 			$AutorModel->insert($Nome_autor);
