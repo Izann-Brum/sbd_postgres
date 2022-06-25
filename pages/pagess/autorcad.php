@@ -41,7 +41,7 @@ include('../../templates/header.php');
             </div>
             <div class="u-form-group u-form-submit">
               <a href="#" class="u-btn u-btn-submit u-button-style">Cadastrar</a>
-              <input type="submit" value="cadastrar" name="submit" class="btn btn-primary">
+              <input type="submit" value="Cadastrar" name="submit" class="u-form-control-hidden">
             </div>
          
           </form>
