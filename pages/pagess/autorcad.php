@@ -33,14 +33,13 @@ include('../../templates/header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO AUTOR</h2>
             <div class="u-form u-form-1">
-              <form action="../Controllers/Editora.php" method="POST" source="custom" name="form" style="padding: 10px;">
+              <form action="../Controllers/Autor.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
                 <!-- CAMPO NOME -->
                 <div class="u-form-group u-form-name">
                   <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
                   <input type="text" placeholder="Nome" id="name-9b6e" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
                 </div>
-
 
                 <!-- BOTÃO CADASTRAR -->
                 <div class="u-align-center u-form-group u-form-submit">
