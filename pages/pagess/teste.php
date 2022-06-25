@@ -40,7 +40,7 @@ include('../../templates/header.php');
                 </div>
                 <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="text" placeholder="Endereço" id="email-9b6e" name="Endereço" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
+                  <input type="text" placeholder="Endereço" id="email-9b6e" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
                 </div>
                 <div class="u-form-group u-form-phone u-form-group-3">
                   <label for="text-9737" class="u-form-control-hidden u-label"></label>
@@ -59,20 +59,7 @@ include('../../templates/header.php');
         </div>
       </div>
     </section>
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
+
   </body>
 </html>
 <?php
