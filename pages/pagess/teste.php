@@ -37,19 +37,19 @@ include('../../templates/header.php');
                 
                 <!-- CAMPO NOME -->
                 <div class="u-form-group u-form-name">
-                  <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
+                  <label for="name-9b6e" class="u-form-control-hidden u-label"> </label>
                   <input type="text" placeholder="Nome" id="name-9b6e" name="Nome" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
                 </div>
 
                 <!-- CAMPO ENDEREÇO -->
                 <div class="u-form-group">
-                  <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
+                  <label for="email-9b6e" class="u-form-control-hidden u-label"> </label>
                   <input type="text" placeholder="Endereço" id="email-9b6e" name="Endereco" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
                 </div>
 
                 <!-- CAMPO TELEFONE -->
                 <div class="u-form-group u-form-phone u-form-group-3">
-                  <label for="text-9737" class="u-form-control-hidden u-label"></label>
+                  <label for="text-9737" class="u-form-control-hidden u-label"> </label>
                   <input type="text" placeholder="Telefone" id="text-9737" name="Telefone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"  maxlength="14" required="required">
                 </div>
 
