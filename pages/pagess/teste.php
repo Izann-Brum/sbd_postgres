@@ -33,7 +33,7 @@ include('../../templates/header.php');
           <div class="u-container-layout u-container-layout-1">
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO EDITORA</h2>
             <div class="u-form u-form-1">
-              <form action="../Controllers/Editora.php" method="POST" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+              <form action="../Controllers/Editora.php" method="POST" class="u-form-spacing-10 u-form-vertical" source="custom" name="form" style="padding: 10px;">
                 
                 <!-- CAMPO NOME -->
                 <div class="u-form-group u-form-name">
