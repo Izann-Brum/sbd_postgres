@@ -96,13 +96,13 @@ include('../../templates/header.php');
                  <!-- CAMPO QUANTIDADE -->
                 <div class="u-form-group u-form-name">
                   <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="number" placeholder="Quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64">
+                  <center><input type="number" placeholder="Quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="required" maxlength="64"> </center>
                 </div>
         
                 <!-- BOTÃO INSERIR -->
                 <div class="u-align-center u-form-group u-form-submit">
                   <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Inserir</a>
-                 <center> <input type="submit" value="INSERIR" name="submit" class="u-form-control-hidden"> </center> 
+                  <input type="submit" value="INSERIR" name="submit" class="u-form-control-hidden">
                 </div>
 
                 <div class="u-form-send-message u-form-send-success"> A sua mensagem foi enviada. </div>
