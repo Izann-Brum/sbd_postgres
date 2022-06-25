@@ -6,7 +6,7 @@ include('../../templates/header.php');
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="CADASTRO EDITORA">
+    <meta name="keywords" content="CADASTRO USUARIO">
     <meta name="description" content="">
     <title>teste</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
@@ -31,7 +31,7 @@ include('../../templates/header.php');
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-container-style u-custom-color-4 u-group u-radius-9 u-shape-round u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO EDITORA</h2>
+            <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">CADASTRO USUARIO</h2>
             <div class="u-form u-form-1">
               <form action="../Controllers/Editora.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
