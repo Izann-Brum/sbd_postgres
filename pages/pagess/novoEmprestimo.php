@@ -63,12 +63,6 @@ include('../../templates/header.php');
             <div class="u-form u-form-1">
               <form action="../Controllers/Livro.php" method="POST" source="custom" name="form" style="padding: 10px;">
                 
-                <!-- CAMPO TITULO -->
-                <div class="u-form-group u-form-name">
-                  <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="number" placeholder="quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
-                </div>
-
                 <!-- CAMPO NOME -->
                 <div class="u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
@@ -97,6 +91,12 @@ include('../../templates/header.php');
                     <option value="<?php echo ($Unidade['Cod_unidade'])?>"><?php echo htmlspecialchars($Unidade['Nome'])?></option>
                     <?php endforeach; ?>
                     </select></center></td>
+                </div>
+
+                 <!-- CAMPO QUANTIDADE -->
+                <div class="u-form-group u-form-name">
+                  <label for="name-9b6e" class="u-form-control-hidden u-label"></label>
+                  <input type="number" placeholder="Quantidade em dias" id="name-9b6e" name="qt_dias" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="" maxlength="64">
                 </div>
         
                 <!-- BOTÃO INSERIR -->
