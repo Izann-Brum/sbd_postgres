@@ -1,9 +1,6 @@
 <?php
-
-echo ' 1 ';
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
-echo ' 2 ';
 
 use ConexaoPHPPostgres\LivroModel as LivroModel;
 use ConexaoPHPPostgres\AutorModel as AutorModel;
@@ -15,7 +12,6 @@ try {
 	echo $e->getMessage();
 }
 
-echo ' 3 ';
 $Cod_livro = null;
 $Nome_autor = null;
 $Nome = null;
@@ -25,15 +21,13 @@ echo $_POST['submit'];
 
 
 if ($_POST['submit']=='Cadastrar'){
-	echo ' submit: ';
+
 	if (empty($_POST['Nome'])){
 		header("Location: ../../pages/CadAutor.php?MSGERROR=Campo nome em branco");
 		die();
 	} else {
 		$Nome_autor = $_POST['Nome'];
-		echo 'Nome do autor:  ';
-		echo $Nome_autor;	
-
+		
 		try {
 			$AutorModel->insert($Nome_autor);
 			header("Location: ../../pages/CadAutor.php?MSG=Cadastrado com sucesso");	
