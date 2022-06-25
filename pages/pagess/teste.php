@@ -1,3 +1,7 @@
+<?php
+include('../../templates/header.php');
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
@@ -37,7 +41,7 @@
                 </div>
                 <div class="u-form-email u-form-group">
                   <label for="email-9b6e" class="u-form-control-hidden u-label"></label>
-                  <input type="email" placeholder="Endereço" id="email-9b6e" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                  <input type="email" placeholder="Endereço" id="email-9b6e" name="text-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
                 </div>
                 <div class="u-form-group u-form-group-3">
                   <label for="text-9737" class="u-form-control-hidden u-label"></label>
@@ -47,28 +51,16 @@
                   <a href="#" class="u-border-2 u-border-grey-75 u-btn u-btn-submit u-button-style u-palette-3-dark-1 u-btn-1">Cadastrar</a>
                   <input type="submit" value="submit" class="u-form-control-hidden">
                 </div>
-                <div class="u-form-send-message u-form-send-success"> Obrigado! A sua mensagem foi enviada. </div>
-                <div class="u-form-send-error u-form-send-message"> Não foi possível enviar a sua mensagem. Por favor, corrija os erros e tente novamente. </div>
-                <input type="hidden" value="" name="recaptchaResponse">
+              
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
   </body>
 </html>
+
+<?php
+include('../../templates/footer.php');
+?>
