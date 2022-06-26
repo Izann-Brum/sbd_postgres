@@ -20,23 +20,23 @@ $Nome = null;
 if ($_POST['submit']=='Cadastrar'){
 
 	if (empty($_POST['Nome'])){
-		header("Location: ../../pages/CadAutor.php?MSGERROR=Campo nome em branco");
+		header("Location: ../../pages/pagess/autorcad.php?MSGERROR=Campo nome em branco");
 		die();
 	} else {
 		$Nome_autor = $_POST['Nome'];
 		
 		try {
 			$AutorModel->insert($Nome_autor);
-			header("Location: ../../pages/CadAutor.php?MSG=Cadastrado com sucesso");	
+			header("Location: ../../pages/CadAutor.php?MSG=".$Nome_autor. " cadastrado com sucesso");	
 		} catch (\PDOException $e) {
 			$sr = serialize($e);
 
 			$nome_key = "LIVRO_AUTOR_Nome_unique";
 
 			if (strpos($sr, $nome_key) !== false) {
-				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Nome do autor indisponível");
+				header("Location: ../../pages/pagess/autorcad.php?MSGERROR=Nome do autor indisponível");
 			}else {
-				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Erro não especificado");
+				header("Location: ../../pages/pagess/autorcad.php?MSGERROR=Erro não especificado");
 			}	
 		}
         

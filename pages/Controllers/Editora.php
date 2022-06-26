@@ -17,10 +17,10 @@ $Cod_editora = null;
 
 if ($_POST['submit']=='Cadastrar'){
 	if (empty($_POST['Nome'])){
-		header("Location: ../../pages/CadEditora.php?MSGERROR=Campo Nome em Branco");
+		header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Campo nome em branco");
 		die();
 	}elseif(empty($_POST['Telefone'])){
-		header("Location: ../../pages/CadEditora.php?MSGERROR=Campo Telefone em Branco");
+		header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Campo telefone em branco");
 		die();
 	}else {
 		$Nome_editora = $_POST['Nome'];
@@ -29,7 +29,7 @@ if ($_POST['submit']=='Cadastrar'){
 
 		try {
 			$EditoraModel->insert($Nome_editora, $Endereco, $Telefone);
-			header("Location: ../../pages/CadEditora.php?MSG=Cadastrado com Sucesso");	
+			header("Location: ../../pages/CadEditora.php?MSG=" .$Nome_editora. " cadastrado com sucesso");	
 		} catch (\PDOException $e) {
 			$sr = serialize($e);
 
@@ -45,10 +45,10 @@ if ($_POST['submit']=='Cadastrar'){
 	}
 } elseif($_POST['submit']=='Alterar'){
 	if (empty($_POST['Nome'])){
-		header("Location: ../../pages/editorasCadastradas.php?MSGERROR=Campo Nome em Branco");
+		header("Location: ../../pages/editorasCadastradas.php?MSGERROR=Campo nome em branco");
 		die();
 	} elseif (empty($_POST['Telefone'])){
-		header("Location: ../../pages/editorasCadastradas.php?MSGERROR=Campo Telefone em Branco");
+		header("Location: ../../pages/editorasCadastradas.php?MSGERROR=Campo telefone em branco");
 		die();
 	} else {
 		$Cod_editora = $_POST['Cod_editora'];
