@@ -5,14 +5,11 @@ include '../database/models.php';
 include_once '../database/database.ini.php';
 
 use ConexaoPHPPostgres\AutorModel as AutorModel;
-try {
-   
-    $AutorModel = new AutorModel($pdo);
-   
-    // $Nome = $_SESSION['Nome'];
-   
-    $Autores = $AutorModel->all();
 
+try {
+    $AutorModel = new AutorModel($pdo);
+
+    $Autores = $AutorModel->all();
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }
@@ -21,11 +18,15 @@ try {
 <?php
 include('../templates/header.php');
 ?>
-
-
-
-
-
+<div id="bb1" style = "min-height: 100vh;">
+<?php
+if (isset($_GET['MSGERROR'])){
+	echo '<h2 style="color:red"><center>'.$_GET['MSGERROR'].'</h2></center>';
+}
+if (isset($_GET['MSG'])){
+	echo '<h2 style="color:green"><center>'.$_GET['MSG'].'</h2></center>';
+}
+?>
 
 <style> table {background: #FFFFFF; box-shadow: 0px 16px 32px rgba(5, 18, 34, 0.08); border-radius: 24px;  font-family: arial, sans-serif;   border-collapse: collapse;   width: 100%; padding: 32px;}  
 td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; } 
@@ -47,29 +48,15 @@ tr {   background-color: #ffffff; } </style>
        
         </form>
 
-<!-- --------------------------------------------------------------------------------------------------- -->
 <?php
 try {
-   
     $Livro = new AutorModel($pdo);
    
     $Nome = $_SESSION['Nome'];
    
     $Livros = $Livro->teste($Nome);
-    // echo($Nome);
-
 } catch (\PDOException $e) {
     echo $e->getMessage();
-}
-?>
-
-<div id="bb1" style = "min-height: 100vh;">
-<?php
-if (isset($_GET['MSGERROR'])){
-	echo '<h2 style="color:red"><center>'.$_GET['MSGERROR'].'</h2></center>';
-}
-if (isset($_GET['MSG'])){
-	echo '<h2 style="color:green"><center>'.$_GET['MSG'].'</h2></center>';
 }
 ?>
         <tr>
@@ -91,8 +78,6 @@ if (isset($_GET['MSG'])){
        
 </table>
 </div>
-
-
 <?php
 include('../templates/footer.php');
 ?>

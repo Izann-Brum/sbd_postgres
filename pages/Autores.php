@@ -1,14 +1,15 @@
 <?php
+session_start();
 
 include '../database/models.php';
 include_once '../database/database.ini.php';
 
 use ConexaoPHPPostgres\AutorModel as AutorModel;
+
 try {
     $AutorModel = new AutorModel($pdo);
-    
-    $Autores = $AutorModel->all();
 
+    $Autores = $AutorModel->all();
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }
@@ -17,7 +18,6 @@ try {
 <?php
 include('../templates/header.php');
 ?>
-
 <div id="bb1" style = "min-height: 100vh;">
 <?php
 if (isset($_GET['MSGERROR'])){
@@ -32,7 +32,9 @@ if (isset($_GET['MSG'])){
 td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; } 
 tr {   background-color: #ffffff; } </style>
 <table class="table">
-        <tr>
+
+    
+     <tr>
         <th>Selecione o autor</th>
     </tr>
         <form action="../pages/Controllers/Autor.php" method="POST">
@@ -43,14 +45,39 @@ tr {   background-color: #ffffff; } </style>
 		<?php endforeach; ?>
             
         <td><input class="btn btn-success" type="submit" name="submit" value="Procurar" style ="margin-right: 16px;"></td>  
-        <?php
-            
-        ?>
+       
         </form>
+
+<?php
+try {
+    $Livro = new AutorModel($pdo);
+   
+    $Nome = $_SESSION['Nome'];
+   
+    $Livros = $Livro->teste($Nome);
+} catch (\PDOException $e) {
+    echo $e->getMessage();
+}
+?>
+        <tr>
+        <th>Codigo do livro </th>
+        <th>Titulo </th>
+    </tr>
+
+     <?php foreach ($Livros as $Livro) : ?>
+    <tr>
+		<form action="../pages/Controllers/Autor.php" method="POST">
+        
+        <td><center><input type="text" name="Cod_livro" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Cod_livro'])?>" readonly></center></td>
+
+        <td><center><input type="text" name="Titulo" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Titulo'])?>" readonly></center></td>
+		
+		</form>
+    </tr>
+    <?php endforeach; ?>
        
 </table>
 </div>
-
 <?php
 include('../templates/footer.php');
 ?>
