@@ -69,7 +69,6 @@ try {
     echo $e->getMessage();
 }
 ?>
-?>
         <tr>
         <th>Codigo do livro </th>
         <th>Titulo </th>
