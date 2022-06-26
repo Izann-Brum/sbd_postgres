@@ -65,11 +65,11 @@ if ($_POST['submit']=='INSERIR'){
 
 				header("Location: ../../pages/emprestimosPendentes.php?MSG=Livro emprestado com sucesso!");
 			} catch (\PDOException $e) {
-				 echo $e->getMessage();
+				//  echo $e->getMessage();
 				$sr = serialize($e);
 
 				$nome_key = '"LIVRO_EMPRESTIMO_pk"';
-				echo('teste 1 ');
+				// echo('teste 1 ');
 
 				if (strpos($sr, $nome_key) !== false) {
 					echo('teste 2 ');
