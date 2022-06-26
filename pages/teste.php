@@ -51,9 +51,7 @@ tr {   background-color: #ffffff; } </style>
 		<?php endforeach; ?>
             
         <td><input class="btn btn-success" type="submit" name="submit" value="Procurar" style ="margin-right: 16px;"></td>  
-        <?php
-            
-        ?>
+       
         </form>
 
 <!-- --------------------------------------------------------------------------------------------------- -->
