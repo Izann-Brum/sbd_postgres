@@ -27,7 +27,7 @@ try {
 include('../../templates/header.php');
 ?>
 
-<div id="bb1" style = "min-height: 20%; background-color: #000000;">
+<div id="bb1" style = "min-height: 45%; background-color: #000000;">
 <?php
 if (isset($_GET['MSGERROR'])){
 	echo '<h2 style="color:red; background-color: #000000;"><center>'.$_GET['MSGERROR'].'</h2></center>';
