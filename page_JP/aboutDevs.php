@@ -28,11 +28,7 @@ include('../templates/header.php');
     <meta property="og:title" content="Página 1">
     <meta property="og:type" content="website">
   </head>
-  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-a636"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-      </div></header>
+  <body class="u-body u-xl-mode">
     <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-8f73">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <h3 class="u-custom-font u-font-ubuntu u-text u-text-body-alt-color u-text-default u-text-1">@izann_brum</h3>
