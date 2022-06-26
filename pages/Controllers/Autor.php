@@ -16,9 +16,6 @@ $Cod_livro = null;
 $Nome_autor = null;
 $Nome = null;
 
-echo ' post\'submit\'';
-echo $_POST['submit'];
-
 
 if ($_POST['submit']=='Cadastrar'){
 
@@ -32,7 +29,15 @@ if ($_POST['submit']=='Cadastrar'){
 			$AutorModel->insert($Nome_autor);
 			header("Location: ../../pages/CadAutor.php?MSG=Cadastrado com sucesso");	
 		} catch (\PDOException $e) {
-			header("Location: ../../pages/CadAutor.php?MSGERROR=Não Foi Possível Cadastrar Autor");	
+			$sr = serialize($e);
+
+			$nome_key = "LIVRO_AUTOR_Nome_unique";
+
+			if (strpos($sr, $nome_key) !== false) {
+				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Nome do autor indisponível");
+			}else {
+				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Erro não especificado");
+			}	
 		}
         
 	}

@@ -36,7 +36,7 @@ if ($_POST['submit']=='Cadastrar'){
 			$nome_key = "EDITORA_Nome_key";
 
 			if (strpos($sr, $nome_key) !== false) {
-				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Nome de editora indisponível");
+				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Nome da editora indisponível");
 			}else {
 				header("Location: ../../pages/pagess/editoracad.php?MSGERROR=Erro não especificado");
 			}	
