@@ -1,5 +1,4 @@
 <?php
-
 include '../database/models.php';
 include_once '../database/database.ini.php';
 
@@ -11,8 +10,8 @@ try {
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }
-
 ?>
+
 <?php
 include('../templates/header.php');
 ?>

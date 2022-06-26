@@ -8,8 +8,6 @@ try {
     $AutorModel = new AutorModel($pdo);
     
     $Autores = $AutorModel->all();
-    // $Autores = $AutorModel->autorWithTitle();  
-
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }

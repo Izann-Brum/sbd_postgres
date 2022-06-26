@@ -1,6 +1,32 @@
 <?php
+
+include '../database/models.php';
+include_once '../database/database.ini.php';
+
+use ConexaoPHPPostgres\AutorModel as AutorModel;
+try {
+    $AutorModel = new AutorModel($pdo);
+    
+    $Autores = $AutorModel->all();
+} catch (\PDOException $e) {
+    echo $e->getMessage();
+}
+?>
+
+<?php
 include('../../templates/header.php');
 ?>
+
+<div id="bb1" style = "min-height: 45%; background-color: #000000;">
+<?php
+if (isset($_GET['MSGERROR'])){
+	echo '<h2 style="color:red; background-color: #000000;"><center>'.$_GET['MSGERROR'].'</h2></center>';
+}
+if (isset($_GET['MSG'])){
+	echo '<h2 style="color:green; background-color: #000000;"><center>'.$_GET['MSG'].'</h2></center>';
+}
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;">
   <head>
