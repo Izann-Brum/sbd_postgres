@@ -33,7 +33,7 @@ if (isset($_GET['MSGERROR'])){
 	echo '<h2 style="color:red; background-color: #DBF9FC;"><center>'.$_GET['MSGERROR'].'</h2></center>';
 }
 if (isset($_GET['MSG'])){
-	echo '<h2 style="color:white; background-color: #DBF9FC;"><center>'.$_GET['MSG'].'</h2></center>';
+	echo '<h2 style="color:white; background-color: #000000;"><center>'.$_GET['MSG'].'</h2></center>';
 }
 ?>
 
