@@ -69,13 +69,13 @@ if ($_POST['submit']=='INSERIR'){
 				$sr = serialize($e);
 
 				$nome_key = "LIVRO_EMPRESTIMO_pk";
-				echo('teste');
+				echo('teste 1 ');
 
 				if (mb_strpos($sr, $nome_key) == true) {
-					echo('teste');
+					echo('teste 2 ');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Usário já possuí título");
 				}else {
-					echo('teste');
+					echo('teste 3 ');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro não especificado");
 				}
 					
