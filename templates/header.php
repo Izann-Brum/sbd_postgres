@@ -22,7 +22,7 @@
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <a class="dropdown-item" href="../../pages/pagess/autorcad.php">Cadastrar Autor </a>
-         <!-- <a class="dropdown-item" href="../../pages/CadAutor.php">Cadastrar Autor </a> -->
+         <a class="dropdown-item" href="../../pages/CadAutor.php">Autores </a>
          <a class="dropdown-item" href="../../pages/Autores.php">Autores e Livros </a>
         </div>
       </li>

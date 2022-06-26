@@ -34,21 +34,6 @@ td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; }
 tr {   background-color: #ffffff; } </style>
 <table class="table">
     <tr>
-        <th>Novo autor</th>
-    </tr>
-    <tr>
-        <th>Nome</th>
-        <th>Cadastrar</th>
-    </tr>
-    
-	<form action="../pages/Controllers/Autor.php" method="POST">
-	<tr>
-        <td><center><input type="text" name="Nome" value="" placeholder="Nome do Autor" class="input-group-text" required></center></td>
-        <td><input class="btn btn-primary" type="submit" name="submit" value="Cadastrar"></td>
-    </tr>
-	</form>
-
-    <tr>
         <th>Autores cadastrados</th>
     </tr>
      <tr>
@@ -66,22 +51,6 @@ tr {   background-color: #ffffff; } </style>
 		</form>
     </tr>
     <?php endforeach; ?>
-
-         <tr>
-        <th>Selecione o autor</th>
-    </tr>
-        <form action="../pages/Controllers/Autor.php" method="POST">
-
-        <td><center><select class="input-group-text" name="Nome_autor">
-        <?php foreach ($Autores as $Autor) : ?>
-		<option value="<?php echo ($Autor['Nome'])?>"><?php echo htmlspecialchars($Autor['Nome'])?></option>
-		<?php endforeach; ?>
-            
-        <td><input class="btn btn-success" type="submit" name="submit" value="Procurar" style ="margin-right: 16px;"></td>  
-        <?php
-            
-        ?>
-        </form>
 </table>
 </div>
 <?php
