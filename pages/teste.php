@@ -23,14 +23,7 @@ include('../templates/header.php');
 ?>
 
 <div id="bb1" style = "min-height: 100vh;">
-<?php
-if (isset($_GET['MSGERROR'])){
-	echo '<h2 style="color:red"><center>'.$_GET['MSGERROR'].'</h2></center>';
-}
-if (isset($_GET['MSG'])){
-	echo '<h2 style="color:green"><center>'.$_GET['MSG'].'</h2></center>';
-}
-?>
+
 
 
 
@@ -67,6 +60,14 @@ try {
 
 } catch (\PDOException $e) {
     echo $e->getMessage();
+}
+?>
+<?php
+if (isset($_GET['MSGERROR'])){
+	echo '<h2 style="color:red"><center>'.$_GET['MSGERROR'].'</h2></center>';
+}
+if (isset($_GET['MSG'])){
+	echo '<h2 style="color:green"><center>'.$_GET['MSG'].'</h2></center>';
 }
 ?>
         <tr>
