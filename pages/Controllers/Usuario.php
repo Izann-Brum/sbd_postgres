@@ -38,9 +38,9 @@ if ($_POST['submit']=='Cadastrar'){
 			$nome_key = "USUARIO_Nome_key";
 			$telefone_key = "USUARIO_Telefone_key";
 
-			if (mb_strpos($sr, $nome_key) == true) {
+			if (strpos($sr, $nome_key) !== false) {
 				header("Location: ../../pages/CadUsuario.php?MSGERROR=Nome de usuário indisponível");
-			}elseif (mb_strpos($sr, $telefone_key) == true) {
+			}elseif (strpos($sr, $nome_key) !== false) {
 				header("Location: ../../pages/CadUsuario.php?MSGERROR=Telefone de usuário indisponível");
 			}
 			else {
