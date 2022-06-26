@@ -1,10 +1,14 @@
+<?php
+include('../templates/header.php');
+?>
+
 <!DOCTYPE html>
 <html style="font-size: 16px;"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Página 1</title>
+    <title>Sobre os desenvolvedores</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Página-1.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -95,7 +99,7 @@
         <img class="u-image u-image-1" src="images/jp_brum_2019_2_copia.jpg" data-image-width="317" data-image-height="211">
       </div>
     </section>
-    
-  
-  
 </body></html>
+<?php
+include('../templates/footer.php');
+?>
