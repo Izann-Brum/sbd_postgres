@@ -1,6 +1,6 @@
 <?php
 
-include '../database/models.php';
+include '../../database/models.php';
 include_once '../../database/database.ini.php';
 
 use ConexaoPHPPostgres\AutorModel as AutorModel;
