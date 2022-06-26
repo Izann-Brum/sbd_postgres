@@ -42,9 +42,9 @@ if ($_POST['submit']=='Cadastrar'){
 			$nome_key = "LIVRO_Titulo_key";
 
 			if (strpos($sr, $nome_key) !== false) {
-				header("Location: ../../pages/CadLivro.php?MSGERROR=Titulo do livro indisponível");
+				header("Location: ../../pages/pagess/livrocad.php?MSGERROR=Titulo do livro indisponível");
 			}else {
-				header("Location: ../../pages/CadLivro.php?MSGERROR=Erro não especificado");
+				header("Location: ../../pages/pagess/livrocad.php?MSGERROR=Erro não especificado");
 			}	
 		}
         
