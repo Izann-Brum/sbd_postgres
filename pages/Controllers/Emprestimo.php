@@ -63,7 +63,7 @@ if ($_POST['submit']=='INSERIR'){
 			
 			    $EmprestimoModel->diminuirCopias($Cod_livro, $Cod_unidade);
 
-				header("Location: ../../pages/pagess/novoEmprestimo.php?MSG=Livro emprestado com sucesso!");
+				header("Location: ../../pages/emprestimosPendentes.php?MSG=Livro emprestado com sucesso!");
 			} catch (\PDOException $e) {
 				// echo $e->getMessage();
 				$sr = serialize($e);
