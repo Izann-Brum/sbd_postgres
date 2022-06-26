@@ -36,10 +36,11 @@ if (isset($_GET['MSG'])){
 	echo '<h2 style="color:white; background-color: #000000;"><center>'.$_GET['MSG'].'</h2></center>';
 }
 ?>
+</div>
 
 <!DOCTYPE html>
 <html style="font-size: 16px;">
-  <head style="background-color: #000000;">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="CADASTRO UNIDADE">
