@@ -71,18 +71,18 @@ if ($_POST['submit']=='INSERIR'){
 				$nome_key = "LIVRO_EMPRESTIMO_pk";
 
 				if (mb_strpos($sr, $nome_key) == true) {
-					header("Location: ../../pages/novoEmprestimo.php?MSGERROR=Usário já possuí título");
+					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Usário já possuí título");
 				}else {
-					header("Location: ../../pages/novoEmprestimo.php?MSGERROR=Erro não especificado");
+					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro não especificado");
 				}
 					
 				}	
 			}else{
-				header("Location: ../../pages/novoEmprestimo.php?MSGERROR=Livro indisponível nesta unidade");
+				header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Livro indisponível nesta unidade");
 				die();
 			}
 		}catch (\PDOException $e) {
-			header("Location: ../../pages/novoEmprestimo.php?MSGERROR=Erro nao especificado");
+			header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro nao especificado");
 		}	
 
 		
