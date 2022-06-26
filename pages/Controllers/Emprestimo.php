@@ -75,6 +75,7 @@ if ($_POST['submit']=='INSERIR'){
 					echo('teste');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Usário já possuí título");
 				}else {
+					echo('teste');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro não especificado");
 				}
 					
