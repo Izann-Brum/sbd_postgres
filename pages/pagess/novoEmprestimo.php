@@ -27,7 +27,7 @@ try {
 include('../../templates/header.php');
 ?>
 
-<div id="bb1" style = "min-height: 20%;">
+<div id="bb1" style = "min-height: 20%; background-color: #000000;">
 <?php
 if (isset($_GET['MSGERROR'])){
 	echo '<h2 style="color:red; background-color: #000000;"><center>'.$_GET['MSGERROR'].'</h2></center>';
@@ -39,7 +39,7 @@ if (isset($_GET['MSG'])){
 
 <!DOCTYPE html>
 <html style="font-size: 16px;">
-  <head>
+  <head style="background-color: #000000;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="CADASTRO UNIDADE">
