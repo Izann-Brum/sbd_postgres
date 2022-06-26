@@ -65,7 +65,7 @@ if ($_POST['submit']=='INSERIR'){
 
 				header("Location: ../../pages/pagess/novoEmprestimo.php?MSG=Livro emprestado com sucesso!");
 			} catch (\PDOException $e) {
-				echo $e->getMessage();
+				// echo $e->getMessage();
 				$sr = serialize($e);
 
 				$nome_key = "LIVRO_EMPRESTIMO_pk";
