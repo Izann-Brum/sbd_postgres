@@ -65,20 +65,15 @@ if ($_POST['submit']=='INSERIR'){
 
 				header("Location: ../../pages/emprestimosPendentes.php?MSG=Livro emprestado com sucesso!");
 			} catch (\PDOException $e) {
-				//  echo $e->getMessage();
 				$sr = serialize($e);
 
 				$nome_key = '"LIVRO_EMPRESTIMO_pk"';
-				// echo('teste 1 ');
 
 				if (strpos($sr, $nome_key) !== false) {
-					echo('teste 2 ');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Usário já possuí título");
 				}else {
-					echo('teste 3 ');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro não especificado");
 				}
-					echo(' teste 4 ');
 				}	
 			}else{
 				header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Livro indisponível nesta unidade");

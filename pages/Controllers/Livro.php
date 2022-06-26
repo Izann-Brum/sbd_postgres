@@ -41,7 +41,7 @@ if ($_POST['submit']=='Cadastrar'){
 
 			$nome_key = "LIVRO_Titulo_key";
 
-			if (mb_strpos($sr, $nome_key) == true) {
+			if (strpos($sr, $nome_key) !== false) {
 				header("Location: ../../pages/CadLivro.php?MSGERROR=Titulo do livro indisponível");
 			}else {
 				header("Location: ../../pages/CadLivro.php?MSGERROR=Erro não especificado");
