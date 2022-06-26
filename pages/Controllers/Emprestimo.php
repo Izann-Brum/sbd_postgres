@@ -78,7 +78,7 @@ if ($_POST['submit']=='INSERIR'){
 					echo('teste 3 ');
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Erro não especificado");
 				}
-					
+					echo(' teste 4 ');
 				}	
 			}else{
 				header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Livro indisponível nesta unidade");
