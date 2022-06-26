@@ -24,7 +24,7 @@
     <meta property="og:title" content="Página 1">
     <meta property="og:type" content="website">
   </head>
-  <body data-home-page="Página-1.html" data-home-page-title="Página 1" class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-a636"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-a636"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1">
           <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
@@ -96,18 +96,6 @@
       </div>
     </section>
     
-    
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2849"><div class="u-align-left u-clearfix u-sheet u-sheet-1"></div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/html5-template" target="_blank">
-        <span>HTML5 Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
-        <span>HTML Layout generator</span>
-      </a>. 
-    </section>
+  
   
 </body></html>

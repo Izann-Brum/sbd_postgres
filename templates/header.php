@@ -98,7 +98,7 @@
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
          <a class="dropdown-item" href="../../page_about_proj\Página-Inicial.php">Sobre o Projeto </a>
-         <a class="dropdown-item" href="../../page_JP/Página-Inicial.php">Sobre os Desenvolvedores </a>
+         <a class="dropdown-item" href="../../page_JP/aboutDevs.php">Sobre os Desenvolvedores </a>
         </div>
       </li>
     </ul>  <!-- FIM -->
