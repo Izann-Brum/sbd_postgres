@@ -52,7 +52,15 @@ if ($_POST['submit']=='Cadastrar'){
 			$AutorModel->update($Cod_autor, $Nome_autor);
 			header("Location: ../../pages/CadAutor.php?MSG=Alterado com sucesso");	
 		} catch (\PDOException $e) {
-			header("Location: ../../pages/CadAutor.php?MSGERROR=Não foi possível Alterar");	
+			$sr = serialize($e);
+
+			$nome_key = "LIVRO_AUTOR_Nome_unique";
+
+			if (strpos($sr, $nome_key) !== false) {
+				header("Location: ../../pages/CadAutor.php?MSGERROR=Nome do autor indisponível");
+			}else {
+				header("Location: ../../pages/CadAutor.php?MSGERROR=Erro não especificado");
+			}	
 		}
         
 	}
