@@ -69,6 +69,7 @@ if ($_POST['submit']=='INSERIR'){
 				$sr = serialize($e);
 
 				$nome_key = "LIVRO_EMPRESTIMO_pk";
+				echo('teste');
 
 				if (mb_strpos($sr, $nome_key) == true) {
 					header("Location: ../../pages/pagess/novoEmprestimo.php?MSGERROR=Usário já possuí título");
