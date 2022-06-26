@@ -16,27 +16,27 @@ $Endereco = null;
 
 if ($_POST['submit']=='Cadastrar'){
 	if (empty($_POST['Nome'])){
-		header("Location: ../../pages/CadUnidade.php?MSGERROR=Nome em branco");
+		header("Location: ../../pages/pagess/unidadecad.php?MSGERROR=Nome em branco");
 		die();
 	}
 	elseif (empty($_POST['Endereco'])) {
-		header("Location: ../../pages/CadUnidade.php?MSGERROR=Cidade em branco");
+		header("Location: ../../pages/pagess/unidadecad.php?MSGERROR=Cidade em branco");
 		die();
 	}else {
 		$Nome_unidade = $_POST['Nome'];
         $Endereco = $_POST['Endereco'];
 		try {
 			$UnidadeModel->insert($Nome_unidade, $Endereco);
-			header("Location: ../../pages/CadUnidade.php?MSG=Cadastrado com Sucesso");		
+			header("Location: ../../pages/unidadeCadastradas.php?MSG=" .$Nome_unidade. " cadastrado com sucesso");		
 		} catch (\PDOException $e) {
 			$sr = serialize($e);
 
 			$nome_key = "UNIDADE_BIBLIOTECA_Nome_key";
 
 			if (mb_strpos($sr, $nome_key) == true) {
-				header("Location: ../../pages/CadUnidade.php?MSGERROR=Nome da unidade indisponível");
+				header("Location: ../../pages/pagess/unidadecad.php?MSGERROR=Nome da unidade indisponível");
 			}else {
-				header("Location: ../../pages/CadUnidade.php?MSGERROR=Erro não especificado");
+				header("Location: ../../pages/pagess/unidadecad.php?MSGERROR=Erro não especificado");
 			}
 		}
     
@@ -55,7 +55,7 @@ if ($_POST['submit']=='Cadastrar'){
 
 		try {			
         	$UnidadeModel->update($Cod_unidade, $Nome_unidade, $Endereco);
-			header("Location: ../../pages/unidadesCadastradas.php?MSG=Alterado com Sucesso");
+			header("Location: ../../pages/unidadesCadastradas.php?MSG=Alterado com sucesso");
 		} catch (\PDOException $e) {
 			$sr = serialize($e);
 
@@ -71,5 +71,5 @@ if ($_POST['submit']=='Cadastrar'){
 } elseif($_POST['submit']=='Deletar'){
 	$Cod_unidade = $_POST['Cod_unidade'];
 	$UnidadeModel->ddelete($Cod_unidade);
-	header("Location: ../../pages/unidadesCadastradas.php?MSG=Deletado com Sucesso");
+	header("Location: ../../pages/unidadesCadastradas.php?MSG=Deletado com sucesso");
 }

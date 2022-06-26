@@ -29,7 +29,7 @@ if ($_POST['submit']=='Cadastrar'){
 
 		try {
 			$EditoraModel->insert($Nome_editora, $Endereco, $Telefone);
-			header("Location: ../../pages/CadEditora.php?MSG=" .$Nome_editora. " cadastrado com sucesso");	
+			header("Location: ../../pages/editorasCadastradas.php?MSG=" .$Nome_editora. " cadastrado com sucesso");	
 		} catch (\PDOException $e) {
 			$sr = serialize($e);
 
