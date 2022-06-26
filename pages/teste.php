@@ -56,13 +56,8 @@ tr {   background-color: #ffffff; } </style>
 		</form>
     </tr>
     <?php endforeach; ?>
-       
-</table>
-</div>
-<!-- --------------------------------------------------------------------------------------------------- -->
 
-<table class="table">
-        <tr>
+     <tr>
         <th>Selecione o autor</th>
     </tr>
         <form action="../pages/Controllers/Autor.php" method="POST">
@@ -80,6 +75,9 @@ tr {   background-color: #ffffff; } </style>
        
 </table>
 </div>
+<!-- --------------------------------------------------------------------------------------------------- -->
+
+
 
 
 <?php
