@@ -19,6 +19,31 @@ try {
 }
 ?>
 
+<style> table {background: #FFFFFF; box-shadow: 0px 16px 32px rgba(5, 18, 34, 0.08); border-radius: 24px;  font-family: arial, sans-serif;   border-collapse: collapse;   width: 100%; padding: 32px;}  
+td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; } 
+tr {   background-color: #ffffff; } </style>
+<table class="table">
+
+    <tr>
+        <th>Codigo do livro </th>
+        <th>Titulo </th>
+    </tr>
+
+     <?php foreach ($Livros as $Livro) : ?>
+    <tr>
+		<form action="../pages/Controllers/Autor.php" method="POST">
+        
+        <td><center><input type="text" name="Cod_livro" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Cod_livro'])?>" readonly></center></td>
+
+        <td><center><input type="text" name="Titulo" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Titulo'])?>" readonly></center></td>
+		
+		</form>
+    </tr>
+    <?php endforeach; ?>
+       
+</table>
+</div>
+
 <?php
 include('../templates/header.php');
 ?>
@@ -52,31 +77,6 @@ tr {   background-color: #ffffff; } </style>
             
         ?>
         </form>
-       
-</table>
-</div>
-
-<style> table {background: #FFFFFF; box-shadow: 0px 16px 32px rgba(5, 18, 34, 0.08); border-radius: 24px;  font-family: arial, sans-serif;   border-collapse: collapse;   width: 100%; padding: 32px;}  
-td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; } 
-tr {   background-color: #ffffff; } </style>
-<table class="table">
-
-    <tr>
-        <th>Codigo do livro </th>
-        <th>Titulo </th>
-    </tr>
-
-     <?php foreach ($Livros as $Livro) : ?>
-    <tr>
-		<form action="../pages/Controllers/Autor.php" method="POST">
-        
-        <td><center><input type="text" name="Cod_livro" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Cod_livro'])?>" readonly></center></td>
-
-        <td><center><input type="text" name="Titulo" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Titulo'])?>" readonly></center></td>
-		
-		</form>
-    </tr>
-    <?php endforeach; ?>
        
 </table>
 </div>
