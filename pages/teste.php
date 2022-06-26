@@ -9,10 +9,9 @@ try {
    
     $AutorModel = new AutorModel($pdo);
    
-    $Nome = $_SESSION['Nome'];
+    // $Nome = $_SESSION['Nome'];
    
-    $Livros = $AutorModel->teste($Nome);
-    // echo($Nome);
+    $Autores = $AutorModel->all();
 
 } catch (\PDOException $e) {
     echo $e->getMessage();
@@ -40,23 +39,7 @@ td, th {   border: 1.5px solid #dddddd;   text-align: center;   padding: 8px; }
 tr {   background-color: #ffffff; } </style>
 <table class="table">
 
-    <tr>
-        <th>Codigo do livro </th>
-        <th>Titulo </th>
-    </tr>
-
-     <?php foreach ($Livros as $Livro) : ?>
-    <tr>
-		<form action="../pages/Controllers/Autor.php" method="POST">
-        
-        <td><center><input type="text" name="Cod_livro" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Cod_livro'])?>" readonly></center></td>
-
-        <td><center><input type="text" name="Titulo" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Titulo'])?>" readonly></center></td>
-		
-		</form>
-    </tr>
-    <?php endforeach; ?>
-
+    
      <tr>
         <th>Selecione o autor</th>
     </tr>
@@ -72,12 +55,42 @@ tr {   background-color: #ffffff; } </style>
             
         ?>
         </form>
+
+<!-- --------------------------------------------------------------------------------------------------- -->
+<?php
+try {
+   
+    $Livro = new AutorModel($pdo);
+   
+    $Nome = $_SESSION['Nome'];
+   
+    $Livros = $Livro->teste($Nome);
+    // echo($Nome);
+
+} catch (\PDOException $e) {
+    echo $e->getMessage();
+}
+?>
+?>
+        <tr>
+        <th>Codigo do livro </th>
+        <th>Titulo </th>
+    </tr>
+
+     <?php foreach ($Livros as $Livro) : ?>
+    <tr>
+		<form action="../pages/Controllers/Autor.php" method="POST">
+        
+        <td><center><input type="text" name="Cod_livro" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Cod_livro'])?>" readonly></center></td>
+
+        <td><center><input type="text" name="Titulo" class="input-group-text" value="<?php echo htmlspecialchars($Livro['Titulo'])?>" readonly></center></td>
+		
+		</form>
+    </tr>
+    <?php endforeach; ?>
        
 </table>
 </div>
-<!-- --------------------------------------------------------------------------------------------------- -->
-
-
 
 
 <?php
