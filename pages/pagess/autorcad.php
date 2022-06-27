@@ -1,5 +1,4 @@
 <?php
-
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
 

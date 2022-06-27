@@ -67,7 +67,7 @@ transtornos.</span>
       <div class="u-container-style u-custom-color-2 u-expanded-width u-group u-shape-rectangle u-group-1">
         <div class="u-container-layout u-container-layout-3">
           <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/iconmonstr-monitoring-4-240_white.png" alt="" data-image-width="240" data-image-height="240">
-          <p class="u-align-left u-heading-font u-text u-text-3"> Com o SBD você controla todo o processo de empréstimo, devolução e estoque das obras que com compõe o acervo da sua biblioteca.</p>
+          <p class="u-align-left u-heading-font u-text u-text-3"> Com o SBD você controla todo o processo de empréstimo, devolução e estoque das obras que compõe o acervo de sua biblioteca.</p>
         </div>
       </div>
     </section>
@@ -82,8 +82,8 @@ transtornos.</span>
                   <span style="font-weight: 700;">
                     <span style="font-size: 1.5rem; font-weight: 700;">
                       <span style="font-weight: 400;">Para melhor manipular o sistema, certos conceitos devem ser previamente</span>
-                      <span style="font-weight: 400;">compreendidos</span>
-                      <span style="font-weight: 400;">. Listamos alguns deles a seguir...</span>
+                      <span style="font-weight: 400;">compreendidos.</span>
+                      <span style="font-weight: 400;"> Listamos alguns deles a seguir...</span>
                     </span>
                     <br>
                   </span>
