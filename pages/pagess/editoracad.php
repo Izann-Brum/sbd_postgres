@@ -16,8 +16,7 @@ try {
 include('../../templates/header.php');
 ?>
 
-<div style="background-color: white; border: 1px; padding: 1px;"> .
-<div id="bb1" style = "min-height: 40px; background-color: #000000;">
+<div style="background-color: white; border: 1px; padding: 1px;">.<div id="bb1" style = "min-height: 40px; background-color: #000000;">
 <?php
 if (isset($_GET['MSGERROR'])){
 	echo '<h2 style="color:red; background-color: #000000;"><center>'.$_GET['MSGERROR'].'</h2></center>';
