@@ -27,6 +27,7 @@ try {
 include('../../templates/header.php');
 ?>
 
+<div style="background-color: black;"> .
 <div id="bb1" style = "min-height: 45%; background-color: #000000;">
 <?php
 if (isset($_GET['MSGERROR'])){
@@ -36,6 +37,7 @@ if (isset($_GET['MSG'])){
 	echo '<h2 style="color:green; background-color: #000000;"><center>'.$_GET['MSG'].'</h2></center>';
 }
 ?>
+
 
 <!DOCTYPE html>
 <html style="font-size: 16px;">
