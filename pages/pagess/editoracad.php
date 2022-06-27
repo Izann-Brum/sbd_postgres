@@ -16,7 +16,7 @@ try {
 include('../../templates/header.php');
 ?>
 
-<div style="background-color: white; padding: 5%;"> .
+<div style="background-color: white; padding: 1px;"> .
 <div id="bb1" style = "min-height: 40px; background-color: #000000;">
 <?php
 if (isset($_GET['MSGERROR'])){
