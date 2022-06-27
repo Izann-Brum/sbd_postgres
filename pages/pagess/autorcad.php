@@ -15,6 +15,7 @@ try {
 <?php
 include('../../templates/header.php');
 ?>
+<div style="background-color: red;"></div>
 
 <div id="bb1" style = "min-height: 45%; background-color: #000000;">
 <?php
