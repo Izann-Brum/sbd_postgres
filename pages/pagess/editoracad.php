@@ -76,7 +76,7 @@ if (isset($_GET['MSG'])){
                 <!-- CAMPO TELEFONE -->
                 <div class="u-form-group u-form-phone u-form-group-3">
                   <label for="text-9737" class="u-form-control-hidden u-label"></label>
-                  <input type="text" placeholder="Telefone" id="text-9737" name="Telefone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"  maxlength="14" required="required">
+                  <input type="tel" placeholder="Telefone" id="text-9737" name="Telefone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"  maxlength="14" required="required">
                 </div>
 
                 <!-- BOTÃO CADASTRAR -->
