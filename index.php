@@ -18,7 +18,7 @@ include('templates/header.php');
             <img src="./assets/images/Logo_UFT.png" width="156px" height="107px">
             <br><br>
             <h1 class="display-4" style="font-weight:bold !important; font-size: 40px; font-family: 'Roboto', sans-serif; color: White;"> Sistema Bibliotecário Digital </h1>
-            <p class="lead" style="font-size: 24px; font-family: 'Roboto', sans-serif; color: #FFFFFF;  opacity: 0.7; line-height:100%">Exemplo de CRUD conectando ao PostgresSQL usando PHP, de maneira simples a fim de ser objetiva e intuitiva.</p>
+            <p class="lead" style="font-size: 24px; font-family: 'Roboto', sans-serif; color: #FFFFFF;  opacity: 0.7; line-height:100%">Exemplo de CRUD conectando ao PostgreSQL usando PHP, de maneira simples a fim de ser objetiva e intuitiva.</p>
         </div>
     </div>
 </div>
