@@ -24,25 +24,8 @@ class AutorModel
         return $stocks;
     }
     
-    public function autorWithTitle(){
-        $sql = 'SELECT DISTINCT "Cod_autor", "Nome_autor", "Titulo" FROM sbd."LIVRO" INNER JOIN sbd."LIVRO_AUTOR" ON "Nome"="Nome_autor" ORDER BY "Cod_autor" ASC;';
-        $stmt = $this->pdo->query($sql);
 
-        $stocks = [];
-       
-        // output data of each row
-        while($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
-            $stocks[] = [
-                'Cod_autor' => $row['Cod_autor'],
-                'Nome_autor' => $row['Nome_autor'],
-                'Titulo' => $row['Titulo'],
-                ];
-        }
-        
-        return $stocks;
-    }
-
-    public function teste($Nome_autor){
+    public function livros_do_autor($Nome_autor){
         $sql = "SELECT DISTINCT \"Cod_livro\", \"Titulo\" FROM sbd.\"LIVRO\"AS l INNER JOIN sbd.\"LIVRO_AUTOR\" ON l.\"Nome_autor\"='$Nome_autor';";
         $stmt = $this->pdo->query($sql);
 

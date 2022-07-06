@@ -7,7 +7,7 @@ use ConexaoPHPPostgres\EmprestimoModel as EmprestimoModel;
 
 try {
     $EmprestimoModel = new EmprestimoModel($pdo);
-    $Emprestimos = $EmprestimoModel->getULA();
+    $Emprestimos = $EmprestimoModel->pegar_unidade_livro_aluno();
 
 } catch (\PDOException $e) {
     echo $e->getMessage();

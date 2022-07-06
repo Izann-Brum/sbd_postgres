@@ -25,7 +25,7 @@ class EmprestimoModel
         $stmt->execute();
     }
 
-    public function getULA()
+    public function pegar_unidade_livro_aluno()
     {
         $stmt = $this->pdo->query('SELECT DISTINCT le."Num_cartao", U."Nome" , le."Cod_livro", LV."Titulo", le."Cod_unidade", UB."Nome" "Nome_unidade", to_char("Data_emprestimo", \'DD-MM-YYYY\')"Data_emprestimo", to_Char("Data_devolucao", \'DD-MM-YYYY\')"Data_devolucao" 
         FROM sbd."LIVRO_EMPRESTIMO" AS le
@@ -64,16 +64,10 @@ class EmprestimoModel
         return $stocks;
     }
 
-    public function ddelete($Numero_cartao, $Cod_livro, $Cod_unidade)
-    {
-        $sql = "DELETE from sbd.\"LIVRO_EMPRESTIMO\" WHERE \"Cod_livro\"=$Cod_livro AND \"Cod_unidade\"=$Cod_unidade AND \"Num_cartao\"=$Numero_cartao";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
-    }   
-
     public function insert($Cod_livro, $Cod_unidade, $Numero_cartao, $Data_emprestimo, $Data_devolucao)
     {
-        $sql = "INSERT INTO sbd.\"LIVRO_EMPRESTIMO\" (\"Cod_livro\", \"Cod_unidade\", \"Num_cartao\", \"Data_emprestimo\", \"Data_devolucao\") VALUES ($Cod_livro, $Cod_unidade, $Numero_cartao, TO_DATE('$Data_emprestimo','DD-MM-YYYY'), TO_DATE('$Data_devolucao','DD-MM-YYYY'));";
+        $sql = "INSERT INTO sbd.\"LIVRO_EMPRESTIMO\" (\"Cod_livro\", \"Cod_unidade\", \"Num_cartao\", \"Data_emprestimo\", \"Data_devolucao\") 
+        VALUES ($Cod_livro, $Cod_unidade, $Numero_cartao, TO_DATE('$Data_emprestimo','DD-MM-YYYY'), TO_DATE('$Data_devolucao','DD-MM-YYYY'));";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
     }
@@ -82,9 +76,16 @@ class EmprestimoModel
         $ano = substr($Data_emprestimo,0,4);
         $ano = $ano+(1);
         $Data_devolucao = $ano.substr($Data_emprestimo,4);
-        $sql = "UPDATE \"Livro_emprestimo\" SET \"Data_emprestimo\"=TO_DATE ('$Data_emprestimo','DD-MM-YYYY'), \"Data_devolucao\"=TO_DATE ('$Data_devolucao','DD-MM-YYYY') WHERE \"Cod_livro_emprestimo\"=$Cod_livro AND \"Cod_unidade_emprestimo\"=$Cod_unidade";
+        $sql = "UPDATE \"Livro_emprestimo\" SET \"Data_emprestimo\"=TO_DATE ('$Data_emprestimo','DD-MM-YYYY'), \"Data_devolucao\"=TO_DATE ('$Data_devolucao','DD-MM-YYYY') 
+        WHERE \"Cod_livro_emprestimo\"=$Cod_livro AND \"Cod_unidade_emprestimo\"=$Cod_unidade";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
     }
 
+      public function ddelete($Numero_cartao, $Cod_livro, $Cod_unidade)
+    {
+        $sql = "DELETE from sbd.\"LIVRO_EMPRESTIMO\" WHERE \"Cod_livro\"=$Cod_livro AND \"Cod_unidade\"=$Cod_unidade AND \"Num_cartao\"=$Numero_cartao";
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute();
+    }   
 }

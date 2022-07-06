@@ -54,7 +54,7 @@ try {
    
     $Nome = $_SESSION['Nome'];
    
-    $Livros = $Livro->teste($Nome);
+    $Livros = $Livro->livros_do_autor($Nome);
 } catch (\PDOException $e) {
     echo $e->getMessage();
 }
