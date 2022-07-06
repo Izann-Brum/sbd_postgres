@@ -26,7 +26,7 @@ class LivroModel
         return $stocks;
     }
 
-    public function QuantidadeCopias($Cod_unidade, $Cod_livro)
+    public function quantidade_de_Copias($Cod_unidade, $Cod_livro)
     {      
        $stmt = $this->pdo->query("SELECT DISTINCT \"Qt_copia\" FROM sbd.\"UNIDADE_BIBLIOTECA\" 
        INNER JOIN sbd.\"LIVRO_COPIAS\" AS lc ON lc.\"Cod_unidade\"=$Cod_unidade 

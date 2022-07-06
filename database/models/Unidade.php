@@ -48,9 +48,6 @@ class UnidadeModel
         $sql = "DELETE FROM sbd.\"UNIDADE_BIBLIOTECA\" WHERE \"Cod_unidade\" = $Cod_unidade";
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute();
-        // $sql = "DELETE from \"Livro_copias\" WHERE \"Cod_unidade_copias\"=$Cod_unidade";
-        // $stmt = $this->pdo->prepare($sql);
-        // $stmt->execute();
     }
 
 }
