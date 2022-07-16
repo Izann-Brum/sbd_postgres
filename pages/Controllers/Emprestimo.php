@@ -2,7 +2,6 @@
 echo ' 1 ';
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
-echo ' 2 ';
 date_default_timezone_set('America/Sao_Paulo');
 
 use ConexaoPHPPostgres\LivroModel as LivroModel;
@@ -11,13 +10,12 @@ use ConexaoPHPPostgres\EmprestimoModel as EmprestimoModel;
 try {
 	$EmprestimoModel = new EmprestimoModel($pdo);
 	$CopiasModel = new LivroModel($pdo);
-	echo ' 3 ';
 
 	$Emprestimo = $EmprestimoModel->all();
-	echo ' 4 ';
+	echo ' 2  ';
 
 } catch (\PDOException $e) {
-	echo ' 1.5 ';
+	echo ' 2.1 ';
 	echo $e->getMessage();
 }
 
@@ -31,6 +29,7 @@ $Cod_unidade_integer = null;
 $Cod_livro_integer = null;
 $resultado = null;
 $qt_Dias = null;
+echo ' 3 ';
 
 if ($_POST['submit']=='INSERIR'){
 	if (empty($_POST['Cod_livro'])){
@@ -53,13 +52,14 @@ if ($_POST['submit']=='INSERIR'){
 		
 		$resultado = date('Y/m/d', strtotime("+{$qt_Dias} days",strtotime($Data_emprestimo)));
 		
-        $Data_devolucao = date('d/m/Y', strtotime($resultado));
+        	$Data_devolucao = date('d/m/Y', strtotime($resultado));
 		$Data_emprestimo = date('d/m/Y', strtotime($Data_emprestimo));
 		
-	
+		echo ' 4 ';
 				
 		try {
 			$Copias = $CopiasModel->QuantidadeCopias($Cod_unidade, $Cod_livro);
+			echo ' 5 ';
 			
 			if ($Copias > 0) {
 			try {
