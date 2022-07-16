@@ -78,7 +78,7 @@ if ($_POST['submit']=='Cadastrar'){
 	$Nome = $_POST['Nome_autor'];
 	$_SESSION['Nome']  = $Nome;
 	try {
-	 header("Location: ../../pages/teste.php?MSG=Livros do autor ". $Nome. "");	
+	 header("Location: ../../pages/Autores.php?MSG=Livros do autor ". $Nome. "");	
 	} catch (\PDOException $e) {
 		$e->getMessage();
 		header("Location: ../../pages/CadAutor.php?MSGERROR= erro: ". $e);	
