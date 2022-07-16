@@ -11,8 +11,10 @@ use ConexaoPHPPostgres\EmprestimoModel as EmprestimoModel;
 try {
 	$EmprestimoModel = new EmprestimoModel($pdo);
 	$CopiasModel = new LivroModel($pdo);
+	echo ' 3 ';
 
 	$Emprestimo = $EmprestimoModel->all();
+	echo ' 4 ';
 
 } catch (\PDOException $e) {
 	echo $e->getMessage();
