@@ -28,6 +28,8 @@ class LivroModel
 
     public function quantidade_de_Copias($Cod_unidade, $Cod_livro)
     {      
+        echo ('livro: '. $Cod_livro);
+		echo (' unidade: '$Cod_unidade);
        $stmt = $this->pdo->query("SELECT DISTINCT \"Qt_copia\" FROM sbd.\"UNIDADE_BIBLIOTECA\" 
        INNER JOIN sbd.\"LIVRO_COPIAS\" AS lc ON lc.\"Cod_unidade\"=$Cod_unidade 
        INNER JOIN sbd.\"LIVRO\" ON lc.\"Cod_livro\"=$Cod_livro;"); 
@@ -38,7 +40,7 @@ class LivroModel
                 'Qt_copia' => $row['Qt_copia'],
             ];
         }
-        
+        echo($stock);
         if(empty($stock)) {
             $zero = 0;
             return $zero;
