@@ -17,6 +17,7 @@ try {
 	echo ' 4 ';
 
 } catch (\PDOException $e) {
+	echo ' 1.5 ';
 	echo $e->getMessage();
 }
 
