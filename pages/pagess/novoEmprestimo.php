@@ -1,7 +1,7 @@
 <?php
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
-
+echo ('  1   ');
 use ConexaoPHPPostgres\LivroModel as LivroModel;
 use ConexaoPHPPostgres\CadastroUsuarioModel as UsuarioModel;
 use ConexaoPHPPostgres\UnidadeModel as Unidade;
@@ -10,14 +10,16 @@ try {
     $LivroModel = new LivroModel($pdo);
     $Livros = $LivroModel->all();
     $Books = $LivroModel->getLivroAutor();
-	
-	$UsuarioModel = new UsuarioModel($pdo);
+	  
+    $UsuarioModel = new UsuarioModel($pdo);
     $Usuarios = $UsuarioModel->all();
 
     $UnidadeModel = new Unidade($pdo);
     $Unidades = $UnidadeModel->all();
-
+    echo ('  1.2   ');
+	
 } catch (\PDOException $e) {
+ echo ('  1.3   ');
     echo $e->getMessage();
 }
 
