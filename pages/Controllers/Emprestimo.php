@@ -59,9 +59,6 @@ if ($_POST['submit']=='INSERIR'){
 				
 		try {
 			echo '  4.1  ';
-			echo ($Cod_livro);
-			echo ($Cod_unidade);
-
 			$Copias = $CopiasModel->QuantidadeCopias($Cod_unidade, $Cod_livro);
 			echo '  4.2  ';
 			
