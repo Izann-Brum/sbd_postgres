@@ -1,7 +1,8 @@
 <?php
+echo ' 1 ';
 include '../../database/models.php';
 include_once '../../database/database.ini.php';
-
+echo ' 2 ';
 date_default_timezone_set('America/Sao_Paulo');
 
 use ConexaoPHPPostgres\LivroModel as LivroModel;
