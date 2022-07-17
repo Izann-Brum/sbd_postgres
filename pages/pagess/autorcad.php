@@ -3,13 +3,13 @@ include '../../database/models.php';
 include_once '../../database/database.ini.php';
 
 use ConexaoPHPPostgres\AutorModel as AutorModel;
-try {
-    $AutorModel = new AutorModel($pdo);
+// try {
+//     $AutorModel = new AutorModel($pdo);
     
-    $Autores = $AutorModel->all();
-} catch (\PDOException $e) {
-    echo $e->getMessage();
-}
+//     $Autores = $AutorModel->all();
+// } catch (\PDOException $e) {
+//     echo $e->getMessage();
+// }
 ?>
 
 <?php
